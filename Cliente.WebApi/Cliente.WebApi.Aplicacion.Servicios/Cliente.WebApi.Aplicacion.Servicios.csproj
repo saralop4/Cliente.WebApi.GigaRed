@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cliente.WebApi.Aplicacion.Interfaces\Cliente.WebApi.Aplicacion.Interfaces.csproj" />
+    <ProjectReference Include="..\Cliente.WebApi.Aplicacion.Validadores\Cliente.WebApi.Aplicacion.Validadores.csproj" />
+    <ProjectReference Include="..\Cliente.WebApi.Dominio.Interfaces\Cliente.WebApi.Dominio.Interfaces.csproj" />
+    <ProjectReference Include="..\Cliente.WebApi.Transversal.Logging\Cliente.WebApi.Transversal.Logging.csproj" />
+    <ProjectReference Include="..\Cliente.WebApi.Transversal.Modelos\Cliente.WebApi.Transversal.Modelos.csproj" />
+  </ItemGroup>
+
+</Project>
